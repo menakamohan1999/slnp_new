@@ -7,6 +7,8 @@ dotenv.config({ path: "./config.env" });
 const dbconnect = require("./config/db");
 const empRoute =  require("./Routes/empRoute");
 const salRoute =  require("./Routes/salRoute");
+const salesRoute =  require("./Routes/salesRoute");
+const purchaseRoute =  require("./Routes/purchaseRoute");
 
 
 //middleware
@@ -28,6 +30,9 @@ app.get("/", (req, res) => {
 //Routes
 app.use("/api", empRoute);
 app.use("/api", salRoute);
+app.use("/api", salesRoute);
+app.use("/api", purchaseRoute);
+
 
 
 //PORT
