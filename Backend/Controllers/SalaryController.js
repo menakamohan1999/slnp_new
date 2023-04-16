@@ -78,7 +78,7 @@ monthsal: async(req,res)=>{
 
 
 
-editsalary: async (req, res) => {
+editsal: async (req, res) => {
   try {
     
     const updatesalary = await Salary.findByIdAndUpdate(
@@ -90,12 +90,13 @@ editsalary: async (req, res) => {
         month:req.body.month,
         empId: req.body.empId,
         empName: req.body.empName,
-        nic: req.body.nic,
         designation: req.body.designation,
-        address: req.body.address,
-        contactNo: req.body.contactNo,
-        email: req.body.email,
-        
+        basicSalary: req.body.basicSalary,
+        brAllowance1: req.body.brAllowance1,
+        brAllowance2: req.body.brAllowance2,
+        brAllowance3: req.body.brAllowance3,
+        holNoOfDays: req.body.holNoOfDays,
+        noPayNoOfDays: req.body.noPayNoOfDays,
       },
       {
         new: true,

@@ -81,7 +81,7 @@ singleemp: async(req,res)=>{
 
 
 
-editemployee: async (req, res) => {
+editemp: async (req, res) => {
   try {
     
     const updateemployee = await Employee.findByIdAndUpdate(

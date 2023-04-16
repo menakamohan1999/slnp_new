@@ -11,7 +11,7 @@ router.get("/getallemp", empCntrl.getallemp);
 // //get one emp 
 router.get("/singleemp/:id", empCntrl.singleemp);
 // // /edit emps
-router.put("/editemployee/:id", empCntrl.editemployee);
+router.put("/editemp/:id", empCntrl.editemp);
 // // /deleteemps
 router.delete("/deleteemp/:id", empCntrl.deleteemp);
 

@@ -15,7 +15,7 @@ router.get("/singlesal/:id", salCntrl.singlesal);
 router.get("/monthsal/:id", salCntrl.monthsal);
 
 // // /edit sals
-router.put("/editsalary/:id", salCntrl.editsalary);
+router.put("/editsal/:id", salCntrl.editsal);
 // // /deletesals
 router.delete("/deletesal/:id", salCntrl.deletesal);
 
