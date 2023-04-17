@@ -41,6 +41,9 @@ app.use("/api", salRoute);
 app.use("/api", salesRoute);
 app.use("/api", purchaseRoute);
 
+
+// API Routes
+
 mqttConnect();
 
 //PORT
